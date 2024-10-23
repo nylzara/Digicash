@@ -1,4 +1,10 @@
 ###################
+What is Digicash
+###################
+
+Digicash is a simple and efficient cash book management application built using CodeIgniter 3. It helps users keep track of cash inflows and outflows with an intuitive user interface. The project is designed to be lightweight, easy to use, and easily customizable.
+
+###################
 What is CodeIgniter
 ###################
 
@@ -14,16 +20,14 @@ for a given task.
 Release Information
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+This repo contains the source code for KasBook. To download the latest stable release, please visit the release page on this repository.
+
 
 **************************
 Changelog and New Features
 **************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+For a complete list of all changes and updates, refer to the `changelog.txt` provided with this project.
 
 *******************
 Server Requirements
@@ -31,23 +35,41 @@ Server Requirements
 
 PHP version 5.6 or newer is recommended.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+- PHP version 5.6 or newer
+- MySQL/MariaDB database
+- Apache/Nginx server
+- Composer (optional)
 
 ************
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+1. Clone this repository to your local server:
+
+    ```bash
+    git clone https://github.com/nylzara/Digicash.git
+
+2. Create a MySQL database for Digicash, e.g., buku_kas.
+
+3. Import the database from buku_kas.sql to your MySQL database.
+
+4. Configure the database connection in application/config/database.php:
+
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'buku_kas',
+
+5. Access the application at http://localhost/Digicash/.
+
 
 *******
 License
 *******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
 *********
 Resources
@@ -67,5 +89,4 @@ or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
 Acknowledgement
 ***************
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Special thanks to the contributors of CodeIgniter and the Digicash project, and to the open-source community for their continuous support.
