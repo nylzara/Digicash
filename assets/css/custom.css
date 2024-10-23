@@ -1,0 +1,15 @@
+:root {
+    --bs-primary: #ff5733; /* Ubah warna primary */
+    --bs-secondary: #33c1ff; /* Ubah warna secondary */
+  }
+  
+  /* Kamu juga bisa override langsung class */
+  .btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+  }
+  
+  .bg-primary {
+    background-color: #ff5733 !important;
+  }
+  
